@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+// 클래스형 컴포넌트는 export default "class"
 export default class App extends Component {
   state = {
     value: 0,
@@ -35,6 +35,7 @@ export default class App extends Component {
         >
           Increase value
         </button>
+        // .bind(this)의 this는 button itself 가 아니라 class itself 라는것을 명시하기 위해
         <button
           onClick={this.resetValue.bind(this)}
           /*
